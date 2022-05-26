@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.Models;
+using PagedList;
 
 namespace ContosoUniversity.Controllers
 {
@@ -16,7 +17,8 @@ namespace ContosoUniversity.Controllers
         private SchoolContext db = new SchoolContext();
 
         // GET: ThongtinMes
-        public ActionResult Index()
+        //public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
+        public ViewResult Index(int? page)
         {
             return View(db.ThongtinMes.ToList());
         }
@@ -47,8 +49,13 @@ namespace ContosoUniversity.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ThongTinMeID,ThongTinMeCode,CreateBy,CreateDate,UpdateBy,UpdateDate,Begom,CycloTron,Belang,BomHoaChat,BeDieuHoa,BeSBR1,BeSBR2,MayEpBun")] ThongtinMe thongtinMe)
+        public ActionResult Create([Bind(Include = "ThongTinMeID,ThongTinMeCode,Begom,CycloTron,Belang,BomHoaChat,BeDieuHoa,BeSBR1,BeSBR2,MayEpBun")] ThongtinMe thongtinMe)
         {
+            thongtinMe.CreateBy = "MayDinhTest";
+            thongtinMe.CreateDate = DateTime.Now;
+            thongtinMe.UpdateBy = "MayDinhTest";
+            thongtinMe.UpdateDate = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 db.ThongtinMes.Add(thongtinMe);
