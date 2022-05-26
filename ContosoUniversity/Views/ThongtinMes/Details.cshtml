@@ -1,0 +1,122 @@
+﻿@model ContosoUniversity.Models.ThongtinMe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ThongtinMe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ThongTinMeCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThongTinMeCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Begom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Begom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CycloTron)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CycloTron)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Belang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Belang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BomHoaChat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BomHoaChat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeDieuHoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeDieuHoa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeSBR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeSBR1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeSBR2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeSBR2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MayEpBun)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MayEpBun)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ThongTinMeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
