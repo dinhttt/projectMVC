@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ContosoUniversity.DAL;
+using ContosoUniversity.Models;
 using ContosoUniversity.ViewModels;
 
 
@@ -15,6 +16,22 @@ namespace ContosoUniversity.Controllers
 
         public ActionResult Index()
         {
+            /*
+            var nhatkyvanhanhs = new List<Nhatkyvanhanh>
+            {
+                new Nhatkyvanhanh{Luuluongra = 10, Chisotieuthudien = 10 },
+                new Nhatkyvanhanh{Luuluongra = 20, Chisotieuthudien = 20 },
+                new Nhatkyvanhanh{Thongtinsuco = "Nha May chay" , Chisotieuthudien = 20 },
+
+            };
+            for(int i = 0; i < nhatkyvanhanhs.Count(); i++)
+            {
+                db.Nhatkyvanhanhs.Add(nhatkyvanhanhs[i]);
+            }
+            db.SaveChanges();
+            */
+
+
             return View();
         }
 

@@ -35,8 +35,13 @@ namespace ContosoUniversity.Controllers
 
             ViewBag.CurrentFilter = searchString;
 
+            
             var students = from s in db.Students
                            select s;
+            
+
+            var nhatkyvanhanhs = from nk in db.Nhatkyvanhanhs select nk;
+
             if (!String.IsNullOrEmpty(searchString))
             {
                 students = students.Where(s => s.LastName.Contains(searchString)
@@ -58,7 +63,9 @@ namespace ContosoUniversity.Controllers
                     break;
             }
 
-            int pageSize = 3;
+            int[] pageExample = { 3, 10, 20, 50 };
+            int pageExampleIndex = 1;
+            int pageSize = pageExample[pageExampleIndex];
             int pageNumber = (page ?? 1);
             return View(students.ToPagedList(pageNumber, pageSize));
         }

@@ -41,3 +41,6 @@ E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversit
 E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.CopyComplete
 E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.addnewtablesnhatkyvanhanh.resources
+E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.addmorecolumnintablesnhatkyvanhanh.resources
+E:\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.addtablethongtinme.resources
