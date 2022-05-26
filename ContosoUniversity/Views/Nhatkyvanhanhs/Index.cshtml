@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ContosoUniversity.Models.Nhatkyvanhanh>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MotaNhatky)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thongtinsuco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Luuluongvao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Luuluongra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chisotieuthudien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Khoiluongtieuthudien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.polymervao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.polymerra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phabotvao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phabotra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NguoiTruc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MotaNhatky)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thongtinsuco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Luuluongvao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Luuluongra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chisotieuthudien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Khoiluongtieuthudien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.polymervao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.polymerra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phabotvao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phabotra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NguoiTruc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NhatkyvanhanhID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NhatkyvanhanhID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NhatkyvanhanhID })
+        </td>
+    </tr>
+}
+
+</table>
